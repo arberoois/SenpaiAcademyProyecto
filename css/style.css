@@ -1,0 +1,209 @@
+:root {
+    --gris: #858688;
+    --violeta: #670C85;
+    --fuente: 'Hind Guntur', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+      display: grid;
+      grid-template-rows: 1fr 8fr 1fr;
+      grid-template-areas: "header header header" 
+                           "main main main"
+                           "footer footer footer";
+      height: 100vh;
+      font-family: var(--fuente);
+  }
+
+  /* HEADER */
+
+  header {
+      display: grid;
+      grid-area: header;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 10px;
+      align-items: center;
+  }
+  header img {
+      grid-column: 1;
+      width: 40%;
+      margin-left: 15px;
+  }
+
+  header nav {
+    font-size: 20px;
+     grid-column: 2/4;
+  }
+
+  header nav ul li {
+      display: inline-block;
+      margin: 10px;
+      color: var(--violeta);
+      
+      font-weight: bold;
+  }
+  header nav ul li:hover {
+      font-size: 23px;
+      cursor: pointer;
+  }
+
+  header form {
+      display: none;
+      font-family: var(--fuente);
+      font-size: 20px;
+  }
+
+  header form label {
+    color: var(--violeta);
+  }
+
+  header form input[type=email] {
+      height: 25px;
+      width: 200px;
+    text-align: center;
+  }
+  header form input[type=button] {
+    width: 150px;
+    padding: 3px;
+    font-weight: bold;
+    color: var(--violeta);
+    cursor: pointer;
+  } 
+
+  /* MAIN */
+
+ main { 
+     display: grid;
+     grid-area: main;
+     grid-template-columns: repeat(3, 1fr);
+
+ }
+
+ #seccion1 {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column: 1/4;
+     
+ }
+
+ #seccion1 h1 {
+     grid-column: 2/3;
+     text-align: center;
+ }
+
+ #seccion1 p {
+     grid-column: 1/4;
+ }
+
+ #seccion2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/4;
+    text-align: center;
+   
+ }
+
+ #seccion2 h2 {
+    grid-column: 2/3;
+    font-size: 30px;
+
+}
+
+.profesor0 {
+    grid-column: 1/2;
+}
+
+.profesor1 {
+    grid-column: 2/3;
+}
+
+.profesor2 {
+    grid-column: 3/4;
+}
+
+.profesor3 {
+    grid-column: 1/2;
+}
+.profesor4 {
+    grid-column: 2/3;
+}
+.profesor5 {
+    grid-column: 3/4;
+}
+.profesor6 {
+    grid-column: 1/2;
+}
+.profesor7 {
+    grid-column: 2/3;
+}
+
+
+
+
+/* PROFESORES */
+#seccion2 img {
+    width: 35%;
+}
+
+#seccion2 h3 {
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+#seccion2 p {
+    color: var(--violeta);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#seccion2 div {
+    border: 1px solid var(--violeta);
+    width: 95%;
+    margin: 10px;
+    box-shadow: 1px 0px 3px var(--gris);
+}
+
+
+
+/* FOOTER */
+
+  footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 10px;
+      grid-area: footer;
+      background-color: var(--gris);
+      padding: 20px;
+      
+  }
+  footer .mapa {
+      grid-column: 2/3;
+      
+  }
+
+/* MEDIA QUERIES */
+  @media(max-width: 768px) {
+
+    header nav {
+        font-size: 14px;
+    }
+    header img {
+        width: 60%;
+    }
+  }
+
+  @media(min-width: 1200px) {
+      header form {
+          display: block;
+      }
+
+      header nav {
+        grid-column: 2/3;
+      }
+  }

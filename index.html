@@ -4,11 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto</title>
+    <title>Gimnasio Oxigenarte</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Proyecto N°1 Senpai Academy</h1>
+    <header>
+      <div>
+        <a href="#">
+          <img src="images/LogoOxigenarte.png" alt="Logo de Oxigenarte" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>Inicio</li>
+          <li>Nosotros</li>
+          <li>Profesores</li>
+          <a href="footer">
+            <li>Contacto</li>
+          </a>
+        </ul>
+      </nav>
+      <form>
+        <label for="emailSubscripcion">Suscribite a nuestras novedades:</label>
+        <br />
+        <input
+          type="email"
+          id="emailSubscripcion"
+          placeholder="¡Ingresa tu Email aquí!"
+        />
+        <input type="button" value="Suscribirme" id="btnSubscripcion" />
+      </form>
+    </header>
+
+    <main>
+      <section id="seccion1">
+        <h1>¿Qué es Oxigenarte?</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          assumenda ipsa voluptates tempore asperiores beatae tenetur, rem
+          recusandae porro perferendis soluta excepturi? Error minus at deleniti
+          suscipit in commodi, ipsam architecto accusantium, doloribus itaque
+          magnam cumque accusamus modi aliquam facere veritatis vitae mollitia
+          nesciunt, voluptates aspernatur quibusdam. Cupiditate, sed aliquid!
+        </p>
+      </section>
+      <section id="seccion2">
+        <h2>Profesores</h2>
+      </section>
+    </main>
+    <footer>
+      <div></div>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3892.674254154018!2d-56.19914930791988!3d-34.872912464297734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0a9d254b0c962e2!2sOxigenarte!5e0!3m2!1ses!2suy!4v1630857265518!5m2!1ses!2suy"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div></div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

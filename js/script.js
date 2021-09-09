@@ -2,10 +2,14 @@ $("#btnSubscripcion").click(obtenerEmail);
 
 function obtenerEmail() {
   const email = $("#emailSubscripcion").val();
-  if (verificarEmail(email)) {
-    alert("El email " + email + " ha sido subscripto a nuestras novedades.");
+  if (email !== "") {
+    if (verificarEmail(email)) {
+      alert("El email " + email + " ha sido subscripto a nuestras novedades.");
+    } else {
+      alert("El email " + email + " no es válido, intenta nuevamente.");
+    }
   } else {
-    alert("El email " + email + " no es válido, intenta nuevamente.");
+    alert("Debes ingresar un email para subscribirte a nuestras novedades.");
   }
 }
 

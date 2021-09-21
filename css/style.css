@@ -98,7 +98,7 @@
  }
 
  #seccion1 p {
-     grid-column: 1/4;
+     grid-column: 2/3;
  }
 
  #seccion2 {
@@ -185,8 +185,41 @@
   footer .mapa {
       grid-column: 2/3;
       
+      
   }
 
+  footer .mapa iframe {
+    border: 2px solid var(--violeta);
+  }
+
+  footer .contacto {
+      grid-column: 1/2;
+      text-align: center;
+  }
+
+  footer .contacto h2, footer .formContacto h2 {
+      color: var(--violeta);
+  }
+
+  footer .contacto ul li {
+      list-style: none;
+  }
+
+  footer .formContacto {
+      grid-column: 3/4;
+      text-align: center;
+  }
+
+  footer .formContacto button {
+      width: 50px;
+      padding: 5px;
+      border: 0;
+      cursor: pointer;
+  }
+  footer .formContacto button:hover {
+   background-color: var(--violeta);
+   color: white;
+  }
 /* MEDIA QUERIES */
   @media(max-width: 768px) {
 

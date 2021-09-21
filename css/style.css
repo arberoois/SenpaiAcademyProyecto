@@ -210,16 +210,16 @@
       text-align: center;
   }
 
-  footer .formContacto button {
+  footer .formContacto input[type="button"] {
       width: 50px;
-      padding: 5px;
+      padding: 3px;
       border: 0;
       cursor: pointer;
+      font-weight: bold;
+      color: var(--violeta);
+      border-radius: 3px;
   }
-  footer .formContacto button:hover {
-   background-color: var(--violeta);
-   color: white;
-  }
+ 
 /* MEDIA QUERIES */
   @media(max-width: 768px) {
 

@@ -141,5 +141,8 @@ function formularioContacto() {
     alert(
       `${nombre} muchas gracias por contacarte con Gimnasio Oxigenarte, te llamaremos a la brevedad al número de teléfono ${telefono}`
     );
+    $("#txtNombreForm").val("");
+    $("#txtTelefonoForm").val("");
+    $("#txtDescripcion").val("");
   }
 }

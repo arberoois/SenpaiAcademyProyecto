@@ -1,7 +1,7 @@
-$("#btnSubscripcion").click(obtenerEmail);
+$("#btnSubscripcion").click(subscripcion);
 $("#btnEnviarForm").click(formularioContacto);
 cargarProfesores();
-function obtenerEmail() {
+function subscripcion() {
   const email = $("#emailSubscripcion").val();
   if (email !== "") {
     if (verificarEmail(email)) {
@@ -12,6 +12,7 @@ function obtenerEmail() {
   } else {
     alert("Debes ingresar un email para subscribirte a nuestras novedades.");
   }
+  $("#emailSubscripcion").val("");
 }
 
 function verificarEmail(email) {

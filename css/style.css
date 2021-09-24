@@ -118,7 +118,7 @@
 .profesor0 {
     grid-column: 1/2;
 }
-
+/*
 .profesor1 {
     grid-column: 2/3;
 }
@@ -142,9 +142,7 @@
 .profesor7 {
     grid-column: 2/3;
 }
-
-
-
+*/
 
 /* PROFESORES */
 #seccion2 img {
@@ -211,6 +209,7 @@
   }
 
   footer .formContacto input[type="button"] {
+      text-align: center;
       width: 50px;
       padding: 3px;
       border: 0;

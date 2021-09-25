@@ -195,7 +195,7 @@
 
   footer .formContacto input[type="button"] {
       text-align: center;
-      width: 50px;
+      width: 80%;
       padding: 3px;
       border: 0;
       cursor: pointer;
@@ -218,6 +218,7 @@
     header img {
         width: 60%;
     }
+
   }
 
   @media(min-width: 1200px) {

@@ -127,7 +127,8 @@
 
 /* PROFESORES */
 #seccion2 img {
-    width: 35%;
+    width: 200px;
+    height: 150px;
 }
 
 #seccion2 h3 {
@@ -230,3 +231,4 @@
         grid-column: 2/3;
       }
   }
+

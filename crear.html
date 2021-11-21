@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear un Profesor</title>
+    <link rel="stylesheet" href="css/crear.css" />
+  </head>
+  <body>
+    <h1>Crear un profesor</h1>
+    <form id="crearProfesor">
+      <div>
+        <label>Nombre: </label>
+        <input type="text" id="nameProfesor" />
+      </div>
+      <div>
+        <label>Rol: </label>
+        <input type="text" id="rolProfesor" />
+      </div>
+      <div id="sexo">
+        <label>Sexo: </label>
+        <select id="slcSexoProfesor">
+          <option value="F">Femenino</option>
+          <option value="M">Masculino</option>
+        </select>
+      </div>
+      <div>
+        <textarea id="descripcionProfesor" cols="30" rows="5"></textarea>
+      </div>
+      <div>
+        <button id="btnCrear">Crear!</button>
+      </div>
+    </form>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

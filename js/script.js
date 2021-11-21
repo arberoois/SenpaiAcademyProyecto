@@ -6,7 +6,18 @@ function subscripcion() {
   const email = $("#emailSubscripcion").val();
   if (email !== "") {
     if (verificarEmail(email)) {
-      alert("El email " + email + " ha sido subscripto a nuestras novedades.");
+      fetch("http://localhost:3000/subscripciones", {
+        method: "POST",
+        body: JSON.stringify(email),
+      })
+        .then((res) => res.json())
+        .then((final) => {
+          if (final.code === 200) {
+            alert("Gracias por subscribirte, ID de subscripcion: " + final.id);
+          } else {
+            alert(final.message);
+          }
+        });
     } else {
       alert("El email " + email + " no es válido, intenta nuevamente.");
     }
